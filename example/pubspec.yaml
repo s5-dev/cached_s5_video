@@ -1,0 +1,59 @@
+name: cached_s5_video_example
+description: "A test app for cached s5 video."
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+version: 0.0.1+1
+
+environment:
+  sdk: ">=3.4.4 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.6
+
+  cached_s5_video:
+    path: ../
+  s5: ^0.2.0
+  hive: ^2.2.3
+  logger: ^2.4.0
+  cached_s5_manager: ^1.2.1
+  media_kit: any
+  media_kit_video: any
+  media_kit_libs_video: any
+  media_kit_native_event_loop: any
+
+# This is a fix for compiling on newer linux distros
+# Will revert when mediakit updates pubdev
+dependency_overrides:
+  media_kit:
+    git:
+      url: https://github.com/media-kit/media-kit
+      path: media_kit
+      ref: main
+  media_kit_video:
+    git:
+      url: https://github.com/media-kit/media-kit
+      path: media_kit_video
+      ref: main
+  media_kit_libs_video:
+    git:
+      url: https://github.com/media-kit/media-kit
+      path: libs/universal/media_kit_libs_video
+      ref: main
+
+  media_kit_native_event_loop:
+    git:
+      url: https://github.com/media-kit/media-kit
+      path: media_kit_native_event_loop
+      ref: main
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true

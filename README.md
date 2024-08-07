@@ -6,6 +6,8 @@ A simple cached video provider for S5 CID's
 
 ### Usage
 
+> ⚠️ Due to the current state of the S5 dart library, the entire video is cached to memory. So DO NOT use large video files with the library until this is addressed.
+
 See [example](example/lib/main.dart).
 
 This is a library built on [s5](https://pub.dev/packages/s5). See there for more details.

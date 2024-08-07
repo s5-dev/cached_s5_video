@@ -3,7 +3,7 @@ description: Cached Video Provider for S5. Allows an application to take an S5 C
 repository: https://github.com/s5-dev/cached_s5_video
 homepage: https://github.com/s5-dev/cached_s5_video
 
-version: 0.0.1
+version: 0.0.2
 
 environment:
   sdk: ">=3.4.4 <4.0.0"
@@ -14,37 +14,11 @@ dependencies:
     sdk: flutter
   flutter_thumbhash: ^0.1.0+1
   logger: ^2.4.0
+  media_kit: ^1.1.10+1
+  media_kit_libs_video: ^1.0.4
+  media_kit_video: ^1.2.4
   s5: ^0.2.0
   universal_io: ^2.2.2
-  media_kit: any
-  media_kit_video: any
-  media_kit_libs_video: any
-  media_kit_native_event_loop: any
-
-# This is a fix for compiling on newer linux distros
-# Will revert when mediakit updates pubdev
-dependency_overrides:
-  media_kit:
-    git:
-      url: https://github.com/media-kit/media-kit
-      path: media_kit
-      ref: main
-  media_kit_video:
-    git:
-      url: https://github.com/media-kit/media-kit
-      path: media_kit_video
-      ref: main
-  media_kit_libs_video:
-    git:
-      url: https://github.com/media-kit/media-kit
-      path: libs/universal/media_kit_libs_video
-      ref: main
-
-  media_kit_native_event_loop:
-    git:
-      url: https://github.com/media-kit/media-kit
-      path: media_kit_native_event_loop
-      ref: main
 
 dev_dependencies:
   flutter_test:

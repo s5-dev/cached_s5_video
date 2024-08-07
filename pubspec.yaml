@@ -1,5 +1,5 @@
 name: cached_s5_video
-description: "Cached Video Provider for S5."
+description: Cached Video Provider for S5. Allows an application to take an S5 CID and display it with a simple, drop in, module.
 repository: https://github.com/s5-dev/cached_s5_video
 homepage: https://github.com/s5-dev/cached_s5_video
 

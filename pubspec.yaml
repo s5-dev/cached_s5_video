@@ -3,7 +3,7 @@ description: Cached Video Provider for S5. Allows an application to take an S5 C
 repository: https://github.com/s5-dev/cached_s5_video
 homepage: https://github.com/s5-dev/cached_s5_video
 
-version: 0.0.2
+version: 0.0.1
 
 environment:
   sdk: ">=3.4.4 <4.0.0"

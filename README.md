@@ -16,7 +16,6 @@ Basic Usage:
 Widget cachedS5Video = CachedS5Video(
   cid: cid, // String
   s5: s5, // See https://pub.dev/packages/s5
-  thumbhash: thumbhashString, // String representation of thumbhash
 );
 ```
 

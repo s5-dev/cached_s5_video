@@ -2,7 +2,7 @@
 
 A simple cached video provider for S5 CID's
 
-![Demo GIF](https://raw.githubusercontent.com/s5-dev/cached_s5_video/main/static/demo.gif)
+![Demo GIF](https://github.com/s5-dev/cached_s5_video/blob/main/static/demo.gif?raw=true)
 
 ### Usage
 
